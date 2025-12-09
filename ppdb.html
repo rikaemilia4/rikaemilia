@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPDB Madrasah Mada Nusantara</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f6f8f7;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #0f5132, #1b8f5a);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        nav {
+            background: #0f5132;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #0f5132;
+        }
+        .btn {
+            display: inline-block;
+            background: #1b8f5a;
+            padding: 12px 25px;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #146c43;
+        }
+        footer {
+            background: #0f5132;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        form button {
+            width: 100%;
+            padding: 12px;
+            background: #1b8f5a;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PPDB Madrasah Mada Nusantara</h1>
+    <p>Membangun Generasi Cerdas, Berakhlak, dan Berdaya</p>
+</header>
+
+<nav>
+    <a href="#info">Informasi PPDB</a>
+    <a href="#alur">Alur Pendaftaran</a>
+    <a href="#daftar">Formulir</a>
+</nav>
+
+<div class="container">
+    <div class="card" id="info">
+        <h2>Informasi Penerimaan Peserta Didik Baru</h2>
+        <p>Madrasah Mada Nusantara membuka pendaftaran peserta didik baru tahun ajaran 2025/2026 untuk jenjang MI/MTs/MA. Program unggulan meliputi pembelajaran Qur'ani, akademik, serta pengembangan karakter.</p>
+        <ul>
+            <li>Pendaftaran: 10 Januari – 30 April 2025</li>
+            <li>Seleksi: 5–10 Mei 2025</li>
+            <li>Pengumuman: 15 Mei 2025</li>
+        </ul>
+    </div>
+
+    <div class="card" id="alur">
+        <h2>Alur Pendaftaran</h2>
+        <ol>
+            <li>Mengisi formulir pendaftaran online</li>
+            <li>Upload dokumen (KK, Akta, raport)</li>
+            <li>Verifikasi oleh panitia</li>
+            <li>Tes baca Qur'an & wawancara</li>
+            <li>Pengumuman dan daftar ulang</li>
+        </ol>
+    </div>
+
+    <div class="card" id="daftar">
+        <h2>Formulir Pendaftaran Online</h2>
+        <form>
+            <label>Nama Lengkap:</label>
+            <input type="text" required />
+
+            <label>Jenis Kelamin:</label>
+            <select required>
+                <option value="">-- Pilih --</option>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+            </select>
+
+            <label>NISN:</label>
+            <input type="text" required />
+
+            <label>Alamat:</label>
+            <input type="text" required />
+
+            <label>Jenjang yang dipilih:</label>
+            <select required>
+                <option value="">-- Pilih Jenjang --</option>
+                <option>MI</option>
+                <option>MTs</option>
+                <option>MA</option>
+            </select>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Madrasah Mada Nusantara – PPDB Online</p>
+</footer>
+
+</body>
+</html>
